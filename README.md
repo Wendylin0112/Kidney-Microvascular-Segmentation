@@ -28,6 +28,19 @@ The aim was to process annotated histology tiles, train a **2D U-Net** to distin
 
 This summary describes the historical coursework workflow. For implementation specifics, inspect the [MATLAB Live Script](./hw1_SegmentMicrovascular.mlx) and the [original report](./%E9%86%AB%E5%AD%B8%E5%BD%B1%E5%83%8F%E5%88%86%E6%9E%90%E5%B0%88%E9%A1%8CHW1.pdf).
 
+## Prediction Gallery
+
+Below are **model-generated prediction previews** converted from TIFF files already stored in `Predicted_images/`. The two outputs for each case are displayed side-by-side; they should **not** be interpreted as a ground-truth comparison or a quantitative performance metric.
+
+| Case 444444444444 | Case 888888888888 |
+| :---: | :---: |
+| ![Prediction TIFF output 1 for case 444444444444](./docs/previews/predicted_444444444444_1.png) | ![Prediction TIFF output 1 for case 888888888888](./docs/previews/predicted_888888888888_1.png) |
+| ![Prediction TIFF output 2 for case 444444444444](./docs/previews/predicted_444444444444_2.png) | ![Prediction TIFF output 2 for case 888888888888](./docs/previews/predicted_888888888888_2.png) |
+
+[Explore all original TIFF predictions](./Predicted_images) · [Prediction coordinate JSON files](./Predicted_json)
+
+*PNG previews are automatically generated from the original TIFF outputs via [GitHub Actions](./.github/workflows/prediction-previews.yml); originals remain unchanged.*
+
 ## Results and Lessons Learned
 
 - The original report recorded **approximately 92% training accuracy**. This is a *training* figure, **not** a held-out test Dice/IoU score or evidence of clinical accuracy.
