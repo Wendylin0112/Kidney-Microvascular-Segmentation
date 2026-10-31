@@ -30,7 +30,7 @@ This summary describes the historical coursework workflow. For implementation sp
 
 ## Prediction Gallery
 
-Below are **model-generated prediction previews** converted from TIFF files already stored in `Predicted_images/`. The two outputs for each case are displayed side-by-side; they should **not** be interpreted as a ground-truth comparison or a quantitative performance metric.
+Below are **model-generated prediction previews** converted from TIFF files already stored in `Predicted_images/`. For each case, the **first row shows the predicted binary vessel mask** and the **second row shows its associated histology image in the original TIFF colors**. These previews should **not** be interpreted as a ground-truth comparison or a quantitative performance metric.
 
 | Case 444444444444 | Case 888888888888 |
 | :---: | :---: |
@@ -39,7 +39,7 @@ Below are **model-generated prediction previews** converted from TIFF files alre
 
 [Explore all original TIFF predictions](./Predicted_images) · [Prediction coordinate JSON files](./Predicted_json)
 
-*PNG previews are automatically generated from the original TIFF outputs via [GitHub Actions](./.github/workflows/prediction-previews.yml); originals remain unchanged.*
+*PNG previews are generated from the existing TIFF outputs via [GitHub Actions](./.github/workflows/prediction-previews.yml): masks remain monochrome, while histology images retain their original RGB colors. Original TIFFs remain unchanged.*
 
 ## Results and Lessons Learned
 
